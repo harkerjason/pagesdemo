@@ -1,2 +1,8 @@
-<h1>Hackathon 2019</h1>
-<button>Make Alina's Title Prettier</button>
+<h1 id="title">Hackathon 2019</h1>
+<button onclick="changeTitle()">Change Title</button>
+<script>
+	function changeTitle() {
+		var title_element = document.getElementById("title")
+		title_element.innerText = 'NEW TITLE!'
+	}
+</script>
